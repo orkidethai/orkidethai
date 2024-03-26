@@ -1,0 +1,12 @@
+# Svelte
+node_modules/
+public/build/
+.svelte-kit/
+
+# Editor directories
+.idea/
+.vscode/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
