@@ -12,6 +12,7 @@ body {
   margin-top: 50px;
   /* padding-top: 200px; --> */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #732a6e;
 }
 
 nav {
@@ -34,14 +35,6 @@ nav {
   padding: 0 1rem;
 }
 
-.logo {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  align-items: center;
-  text-align: center;
-  display: flex;
-}
 
 nav a {
   text-decoration: none;
@@ -50,16 +43,37 @@ nav a {
 }
 
 
+.logo {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+
+.orkide{
+  width: 100%;
+  height: 200%;
+}
+
+.text {
+  padding-left: 20%;
+  padding-right: 20%;
+}
 
 .om-oss-container {
+  top:0px;
   padding: 20px;
   text-align: center;
   background: #732a6e;
   color: #eff0ed;
+  margin-top: 0%;
+  padding-top: 0%;
 }
 
 .om-oss-container h1 {
-  margin-top: 1rem;
+  margin-top: 0%;
   margin-bottom: 1rem;
   font-size: 6rem;
   font-weight: bold;
@@ -94,4 +108,5 @@ footer {
   header, main, body, footer {
     width: 100%;
   }
+  
 }
