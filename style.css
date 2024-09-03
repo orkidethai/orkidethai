@@ -166,18 +166,33 @@ footer {
   body{
     width: 100%;
   }
-  
-}
-
-
-@media(max-width:800px){
   .hideOnMobile{
     display: none;
   }
+  .om-oss-container h1{
+    font-size: 2.5rem;
+  }
+  .om-oss-container p{
+    font-size: 0.9rem;
+  }
+  .hero{
+    height: 15rem;
+  }
 }
+
 
 @media(max-width: 400px){
   .sidebar{
     width: 100%;
   }
+  .hero{
+    height: 8rem;
+  }
+  .om-oss-container h1{
+    font-size: 1.8rem;
+  }
+  .om-oss-container p{
+    font-size: 0.6rem;
+  }
+  
 }
