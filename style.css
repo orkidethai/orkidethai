@@ -161,9 +161,9 @@ footer {
   width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media(max-width: 800px) {
   /* For mobile phones: */
-  header, main, body, footer {
+  body{
     width: 100%;
   }
   
