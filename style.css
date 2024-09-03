@@ -14,10 +14,10 @@ body {
   margin-top: 50px;
   /* padding-top: 200px; --> */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: #732a6e;
+
 }
 
-nav {
+header {
   background-color: #732a6e;
   top:0;
   position: fixed;
@@ -102,10 +102,10 @@ nav a:hover{
   cursor: pointer;
 }
 
-.logo {
+.hero {
   padding: 0px;
   width: 100%;
-  height: 100%;
+  height: 35rem;
   align-items: center;
   text-align: center;
 }
@@ -122,13 +122,12 @@ nav a:hover{
 }
 
 .om-oss-container {
-  top:0px;
-  padding: 20px;
   text-align: center;
   background: #732a6e;
   color: #eff0ed;
   margin-top: 0%;
   padding-top: 0%;
+  padding-bottom: 1rem;
 }
 
 .om-oss-container h1 {
