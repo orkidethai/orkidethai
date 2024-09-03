@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
+*{
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+}
+
+body {
+  min-height: 100vh;
   margin-top: 50px;
   /* padding-top: 200px; --> */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,29 +18,33 @@ body {
 }
 
 nav {
-  height: 50px;
-  background: #732a6e;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  background-color: #732a6e;
   top:0;
   position: fixed;
   width: 100%;
 }
 
-.navlogo {                                  
-  color: #eff0ed;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-style: italic;
-  padding: 0 1rem;
-  margin-right: auto;
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-nav a {
+nav li{
+  height: 50px;
+}
+
+.navbar a {
+  height: 100%; 
+  padding: 0rem 1.2rem; 
   text-decoration: none;
-  padding: 0.2rem 0.8rem;
+  display: flex;
+  align-items: center;
   color: #eff0ed;
+  
+ 
+ 
   font-size: 1.1rem;
   cursor: pointer;
   border-radius: 2rem;
@@ -48,6 +54,53 @@ nav a:hover{
   background-color: #aa6a8c;
 }
 
+.navbar li:first-child {                                  
+  color: #eff0ed;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+
+  padding: 0 1rem;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 150px;
+  z-index: 999;
+  background-color: #732a6eab;
+  backdrop-filter: blur(30px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+  height: 100%; 
+  padding: 0rem 1.2rem; 
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #eff0ed;
+  
+ 
+ 
+  font-size: 1.1rem;
+  cursor: pointer;
+}
 
 .logo {
   padding: 0px;
@@ -109,7 +162,7 @@ footer {
   width: 100%;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 800px) {
   /* For mobile phones: */
   header, main, body, footer {
     width: 100%;
