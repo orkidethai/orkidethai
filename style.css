@@ -142,10 +142,6 @@ nav a:hover{
   width: 70%;
 }
 
-.text {
-  padding-left: 20%;
-  padding-right: 20%;
-}
 
 .om-oss-container {
   text-align: center;
@@ -171,6 +167,41 @@ nav a:hover{
   line-height: 1.5;
 }
 
+.text {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+
+.öppettider-container {
+  text-align: center;
+  background: #732a6e;
+  color: #eff0ed;
+  margin-top: 0%;
+  padding-top: 0%;
+  padding-bottom: 1rem;
+}
+
+.öppettider-container h1 {
+  margin-top: 0%;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.öppettider-container p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.öppettider-text {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 
 .column {
   float: left;
@@ -192,6 +223,10 @@ nav a:hover{
   color: #eff0ed;
 }
 
+.kontakt-container h1 {
+  font-size: 2rem;
+}
+
 footer {
   background-color: #732a6ee0;
   color: #221927;
@@ -209,14 +244,23 @@ footer {
   .hideOnMobile{
     display: none;
   }
+  
+  .hero{
+    height: 15rem;
+  }
+
   .om-oss-container h1{
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .om-oss-container p{
     font-size: 1.2rem;
   }
-  .hero{
-    height: 15rem;
+
+  .öppettider-container h1{
+    font-size: 3.5rem;
+  }
+  .öppettider-container p{
+    font-size: 1.2rem;
   }
 }
 
