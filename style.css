@@ -171,6 +171,20 @@ nav a:hover{
   line-height: 1.5;
 }
 
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 .kontakt-container {
   padding: 20px;
 
@@ -196,10 +210,10 @@ footer {
     display: none;
   }
   .om-oss-container h1{
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   .om-oss-container p{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .hero{
     height: 15rem;
