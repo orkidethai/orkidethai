@@ -13,25 +13,12 @@
   <header>
     <nav>
 
-      <ul class="sidebar">
-        <li onclick="hideSidebar()">
-          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
-              fill="#e8eaed">
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg>
-          </a>
-        </li>
-        <li><a href="#top">Om oss</a></li>
-        <li><a href="Framsidan.pdf" target="_blank">Meny</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-
       <ul class="navbar">
         <li>Orkide Thai</li>
         <li class="hideOnMobile"><a href="#top">Om oss</a></li>
         <li class="hideOnMobile"><a href="Framsidan.pdf" target="_blank">Meny</a></li>
-        <li class="hideOnMobile"><a href="#kontakt">Kontakt</a></li>
+        <li class="hideOnMobile"><a href="meny.html">MenyHtml</a></li>
+        <li class="hideOnMobile"><a href="#bottom">Kontakt</a></li>
         <li onclick="showSidebar()">
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#eff0ed">
@@ -41,6 +28,21 @@
         </li>
       </ul>
 
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"
+              fill="#e8eaed">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+          </a>
+        </li>
+        <li onclick="hideSidebar()"><a href="#top">Om oss</a></li>
+        <li onclick="hideSidebar()"><a href="Framsidan.pdf" target="_blank">Meny</a></li>
+        <li onclick="hideSidebar()"><a href="#bottom">Kontakt</a></li>
+      </ul>
+
+      
     </nav>
   </header>
 
@@ -141,6 +143,9 @@
     </p>
   </footer>
 
+  <div id="bottom">
+  </div>
+
   <script>
     function showSidebar() {
       const sidebar = document.querySelector(".sidebar");
@@ -151,6 +156,8 @@
       sidebar.style.display = "none";
     }
   </script>
+
+
 </body>
 
 </html>
