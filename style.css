@@ -228,15 +228,14 @@ nav a:hover{
 
 .meny-text a {
   padding: 1rem 3rem;
-  font-size: 1.1rem;
   border: none;
   text-decoration: none;
   color: #732a6e;
   background: #eff0ed;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  border-radius: 5rem;
-  width: 200px; /* Set a fixed width or use flex properties */
+  border-radius: 1rem;
+  width: 12rem; /* Set a fixed width or use flex properties */
   text-align: center;
   display: inline-block; /* Ensure consistent width */
 }
@@ -372,7 +371,9 @@ footer {
   .meny-container h1{
     font-size: 2rem;
   }
-  .meny-container p{
+  .meny-text a {
+    padding: 1rem 1rem;
+    width: 7rem;
     font-size: 1rem;
   }
 
