@@ -110,7 +110,7 @@ nav a:hover{
 }
 
 .hero {
-  height: 60vh;
+  height: 50rem;
   width: 100%;
   position: relative;
 }
@@ -140,7 +140,7 @@ nav a:hover{
   font-weight: bold;
   z-index: 2;
   width: 70%;
-  height: 40%;
+  height: 25%;
 }
 
 
@@ -186,7 +186,7 @@ nav a:hover{
 .öppettider-container h1 {
   margin-top: 0%;
   margin-bottom: 1rem;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
@@ -203,6 +203,65 @@ nav a:hover{
   padding-right: 20%;
 }
 
+.meny-container {
+  text-align: center;
+  background: #732a6e;
+  color: #eff0ed;
+  margin-top: 0%;
+  padding-top: 0%;
+  padding-bottom: 3rem;
+}
+
+.meny-container h1 {
+  margin-top: 0%;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.meny-text {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.meny-text a {
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  border: none;
+  text-decoration: none;
+  color: #732a6e;
+  background: #eff0ed;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  width: 200px; /* Set a fixed width or use flex properties */
+  text-align: center;
+  display: inline-block; /* Ensure consistent width */
+}
+
+.meny-text a:hover {
+  background: #eff0ed;
+  color: #8d88a7;
+}
+
+.column-meny {
+  float: left;
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.row-meny::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.images {
+  background: #221927;
+}
 
 .column {
   float: left;
@@ -210,15 +269,17 @@ nav a:hover{
   padding: 0.5rem;
 }
 
-.row::after {
+.row-images::after {
   content: "";
   clear: both;
   display: table;
+
 }
 
 
 .kontakt-container {
   padding: 20px;
+  line-height: 1.5;
 
   background: #221927;
   color: #eff0ed;
@@ -247,7 +308,7 @@ footer {
   }
   
   .hero{
-    height: 25rem;
+    height: 30rem;
   }
 
   .om-oss-container h1{
@@ -261,6 +322,13 @@ footer {
     font-size: 3.5rem;
   }
   .öppettider-container p{
+    font-size: 1.2rem;
+  }
+
+  .meny-container h1{
+    font-size: 3.5rem;
+  }
+  .meny-container p{
     font-size: 1.2rem;
   }
 
@@ -284,7 +352,7 @@ footer {
   }
 
   .hero{
-    height: 8rem;
+    height: 15rem;
   }
 
   .om-oss-container h1{
@@ -301,11 +369,18 @@ footer {
     font-size: 1rem;
   }
 
+  .meny-container h1{
+    font-size: 2rem;
+  }
+  .meny-container p{
+    font-size: 1rem;
+  }
+
   .kontakt-container h1{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .kontakt-container p{
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
 }
