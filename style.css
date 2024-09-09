@@ -282,6 +282,8 @@ nav a:hover{
 
   background: #221927;
   color: #eff0ed;
+  
+  text-decoration: none;
 }
 
 .kontakt-container h1 {
