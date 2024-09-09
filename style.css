@@ -247,7 +247,7 @@ footer {
   }
   
   .hero{
-    height: 15rem;
+    height: 25rem;
   }
 
   .om-oss-container h1{
@@ -263,6 +263,14 @@ footer {
   .öppettider-container p{
     font-size: 1.2rem;
   }
+
+  .kontakt-container h1{
+    font-size: 2rem;
+  }
+  .kontakt-container p{
+    font-size: 1rem;
+  }
+
 }
 
 
@@ -270,17 +278,34 @@ footer {
   .navbar li:first-child{
     font-size: 1.1rem;
   }
+
   .sidebar{
     width: 100%;
   }
+
   .hero{
     height: 8rem;
   }
+
   .om-oss-container h1{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   .om-oss-container p{
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   
+  .öppettider-container h1{
+    font-size: 2rem;
+  }
+  .öppettider-container p{
+    font-size: 1rem;
+  }
+
+  .kontakt-container h1{
+    font-size: 1.7rem;
+  }
+  .kontakt-container p{
+    font-size: 1rem;
+  }
+
 }
