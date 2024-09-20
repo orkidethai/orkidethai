@@ -73,6 +73,9 @@ nav a:hover{
   align-items: center;
 }
 
+.hideOnDesktop{
+  display: none;
+}
 
 .sidebar{
   position: fixed;
@@ -306,7 +309,7 @@ nav a:hover{
 
 
 footer {
-  background-color: #8D88A7;
+  background-color: #732a6ee0;
   color: #221927;
   padding: 10px;
   text-align: center;
@@ -319,8 +322,17 @@ footer {
   body{
     width: 100%;
   }
+
   .hideOnMobile{
     display: none;
+  }
+  
+  .hideOnDesktop{
+    display: block;
+  }
+
+  .sidebar{
+    width: 25%;
   }
   
   .hero{
@@ -365,6 +377,7 @@ footer {
 
   .sidebar{
     width: 100%;
+    backdrop-filter: blur(30rem);
   }
 
   .hero{
