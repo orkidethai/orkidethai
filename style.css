@@ -368,7 +368,6 @@ footer {
 
 }
 
-
 @media(max-width: 400px){
   .navbar li:first-child{
     font-size: 1.1rem;
