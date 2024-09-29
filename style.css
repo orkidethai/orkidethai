@@ -143,9 +143,8 @@ nav a:hover{
   color: white;
   font-weight: bold;
   z-index: 2;
-  width: 70%;
-  height: 25%;
-  object-fit: cover;
+  width: 90%;
+  object-fit: contain;
 }
 
 
@@ -377,7 +376,8 @@ footer {
 
   .sidebar{
     width: 100%;
-    backdrop-filter: blur(30rem);
+    background-color: #732a6e;
+    backdrop-filter: blur(0);
   }
 
   .hero{
