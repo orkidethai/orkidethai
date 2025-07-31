@@ -207,6 +207,15 @@ nav a:hover{
   padding-right: 20%;
 }
 
+.öppettider-text p.kitchen-info {
+  font-size: 0.9rem;
+  margin-top: 2.5rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+
+
 .meny-container {
   text-align: center;
   background: #732a6e;
