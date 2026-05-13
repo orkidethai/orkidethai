@@ -17,7 +17,7 @@ body {
   margin-top: 50px;
   /* padding-top: 200px; --> */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  overflow-x: hidden;
 }
 
 header {
@@ -113,9 +113,10 @@ nav a:hover{
 }
 
 .hero {
-  height: 40rem;
+  height: clamp(18rem, 65vh, 40rem);
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .restaurant{
@@ -143,7 +144,8 @@ nav a:hover{
   color: white;
   font-weight: bold;
   z-index: 2;
-  width: 90%;
+  width: min(90%, 72rem);
+  max-height: 70%;
   object-fit: contain;
 }
 
@@ -173,6 +175,8 @@ nav a:hover{
 }
 
 .text {
+  max-width: 72rem;
+  margin: 0 auto;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -203,18 +207,62 @@ nav a:hover{
 }
 
 .öppettider-text {
-  padding-left: 20%;
-  padding-right: 20%;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.öppettider-text p.lunch-info {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-top: 0.95rem;
+  margin-bottom: 0;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  text-align: center;
 }
 
 .öppettider-text p.kitchen-info {
   font-size: 0.9rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   opacity: 0.9;
   font-style: italic;
 }
 
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 20rem;
+  margin: 0 auto;
+  width: 100%;
+}
 
+.hours-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 1.5rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.hours-day {
+  font-weight: bold;
+  text-align: left;
+}
+
+.hours-time {
+  text-align: right;
+}
+
+.hours-closed {
+  opacity: 0.9;
+}
 
 .meny-container {
   text-align: center;
@@ -242,6 +290,8 @@ nav a:hover{
 
 
 .meny-text {
+  max-width: 72rem;
+  margin: 0 auto;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -289,6 +339,13 @@ nav a:hover{
   padding: 0.5rem;
 }
 
+.column-images img {
+  display: block;
+  height: 100%;
+  min-height: 16rem;
+  object-fit: cover;
+}
+
 .row-images::after {
   content: "";
   clear: both;
@@ -298,11 +355,13 @@ nav a:hover{
 
 .kontakt-container {
   line-height: 2.5;
-
   background: #221927;
   color: #eff0ed;
-  
   text-decoration: none;
+}
+
+.kontakt-container a {
+  color: inherit;
 }
 
 .kontakt-container h1 {
@@ -348,11 +407,16 @@ footer {
   }
 
   .sidebar{
-    width: 25%;
+    width: min(18rem, 75vw);
   }
   
   .hero{
-    height: 30rem;
+    height: clamp(18rem, 52vh, 30rem);
+  }
+
+  .logga{
+    width: min(92%, 42rem);
+    max-height: 62%;
   }
 
   .om-oss-container h1{
@@ -369,6 +433,10 @@ footer {
     font-size: 1.2rem;
   }
 
+  .hours-row {
+    padding: 0.9rem 0;
+  }
+
   .meny-container h1{
     font-size: 3.5rem;
   }
@@ -381,6 +449,23 @@ footer {
   }
   .kontakt-container p{
     font-size: 1rem;
+  }
+
+  .text,
+  .öppettider-text,
+  .meny-text {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .column-images,
+  .column-kontakt {
+    float: none;
+    width: 100%;
+  }
+
+  .column-kontakt {
+    height: auto;
   }
 
 }
@@ -398,7 +483,12 @@ footer {
   }
 
   .hero{
-    height: 15rem;
+    height: clamp(14rem, 38vh, 18rem);
+  }
+
+  .logga{
+    width: 94%;
+    max-height: 58%;
   }
 
   .om-oss-container h1{
@@ -413,6 +503,20 @@ footer {
   }
   .öppettider-container p{
     font-size: 1rem;
+  }
+
+  .öppettider-text p.lunch-info,
+  .hours-list {
+    max-width: 100%;
+  }
+
+  .hours-row {
+    grid-template-columns: 1fr;
+    row-gap: 0.3rem;
+  }
+
+  .hours-time {
+    text-align: left;
   }
 
   .meny-container h1{
@@ -434,8 +538,8 @@ footer {
     font-size: 0.9rem;
   }
 
-  .column-kontakt {
-    height: 16rem
+  .column-images img {
+    min-height: 12rem;
   }
 
 }

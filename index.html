@@ -3,16 +3,91 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = 0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Orkide Thai Restaurang i Tranemo serverar thaimat, sushi, lunchbuffé och takeaway. Besök oss på Storgatan 19 eller ring 0325-766 99." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#732a6e" />
+  <link rel="canonical" href="https://www.orkidethai.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sv_SE" />
+  <meta property="og:site_name" content="Orkide Thai Restaurang" />
+  <meta property="og:title" content="Orkide Thai Restaurang Tranemo" />
+  <meta property="og:description"
+    content="Thaimat, sushi, lunchbuffé och takeaway i Tranemo. Se öppettider, meny och kontaktuppgifter." />
+  <meta property="og:url" content="https://www.orkidethai.com/" />
+  <meta property="og:image" content="https://www.orkidethai.com/pictures/74715122466__C51BD303-6CB0-4B38-82E8-3FE9E37B1F35.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Orkide Thai Restaurang Tranemo" />
+  <meta name="twitter:description"
+    content="Thaimat, sushi, lunchbuffé och takeaway i Tranemo. Se öppettider, meny och kontaktuppgifter." />
+  <meta name="twitter:image" content="https://www.orkidethai.com/pictures/74715122466__C51BD303-6CB0-4B38-82E8-3FE9E37B1F35.jpg" />
   <link rel="stylesheet" href="style.css" />
   <title>Orkide Thai Restaurang Tranemo</title>
   <!-- SVG Favicon -->
 <link rel="icon" href="svg/orchid.svg" type="image/svg+xml">
-
-<!-- Fallback PNG for browsers that don't support SVG favicons -->
-<link rel="icon" href="favicon/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="favicon/favicon-16x16.png" sizes="16x16" type="image/png">
-
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Orkide Thai Restaurang",
+      "image": "https://www.orkidethai.com/pictures/74715122466__C51BD303-6CB0-4B38-82E8-3FE9E37B1F35.jpg",
+      "url": "https://www.orkidethai.com/",
+      "telephone": "+46 325 766 99",
+      "servesCuisine": [
+        "Thai",
+        "Sushi",
+        "Chinese"
+      ],
+      "priceRange": "$$",
+      "description": "Thaimat, sushi, lunchbuffé och takeaway i Tranemo.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Storgatan 19",
+        "postalCode": "514 33",
+        "addressLocality": "Tranemo",
+        "addressCountry": "SE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Tuesday",
+          "opens": "16:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "11:30",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "11:30",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "12:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "12:00",
+          "closes": "20:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100048098426376"
+      ]
+    }
+  </script>
 </head>
 
 <body>
@@ -24,7 +99,7 @@
         <li>Orkide Thai</li>
         <li class="hideOnMobile"><a href="#om-oss-jump">Om oss</a></li>
         <li class="hideOnMobile"><a href="#meny-jump">Meny</a></li>
-        <li class="hideOnMobile"><a href="#bottom">Kontakt</a></li>
+        <li class="hideOnMobile"><a href="#kontakt-jump">Kontakt</a></li>
         <li class="hideOnDesktop" onclick="showSidebar()">
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#eff0ed">
@@ -45,7 +120,7 @@
         </li>
         <li onclick="hideSidebar()"><a href="#om-oss-jump">Om oss</a></li>
         <li onclick="hideSidebar()"><a href="#meny-jump">Meny</a></li>
-        <li onclick="hideSidebar()"><a href="#bottom">Kontakt</a></li>
+        <li onclick="hideSidebar()"><a href="#kontakt-jump">Kontakt</a></li>
       </ul>
 
 
@@ -53,8 +128,8 @@
   </header>
 
   <div class="hero">
-    <img class="logga" id="om-oss-jump" src="pictures/Logga-removebg-preview.png" alt="">
-    <img class="restaurant" src="pictures/74715122466__C51BD303-6CB0-4B38-82E8-3FE9E37B1F35.jpg" alt="">
+    <img class="logga" id="om-oss-jump" src="pictures/Logga-removebg-preview.png" alt="Orkide Thai logotyp">
+    <img class="restaurant" src="pictures/74715122466__C51BD303-6CB0-4B38-82E8-3FE9E37B1F35.jpg" alt="Orkide Thai Restaurang i Tranemo">
   </div>
 
   <section class="om-oss">
@@ -82,37 +157,53 @@
   </section>
 
   <section class="öppettider">
-    <div class="öppettider-container" id="meny-jump">
+    <div class="öppettider-container">
       <div class="öppettider-text">
         <h1>Öppettider</h1>
 
-
-        <p>
-          Måndag - Stängt
+        <p class="lunch-info">
+          Lunchbuffé serveras ons - fre kl. 11:30 - 14:00
         </p>
 
-        <p>
-          Tisdag: 16.00 - 20.00 (ingen buffé)
-        </p>
+        <div class="hours-list">
+          <div class="hours-row">
+            <span class="hours-day">Måndag</span>
+            <span class="hours-time hours-closed">Stängt</span>
+          </div>
 
-        <p>
-          Onsdag - Torsdag: 11.30 - 20.00
-        </p>
+          <div class="hours-row">
+            <span class="hours-day">Tisdag</span>
+            <span class="hours-time">16.00 - 20.00</span>
+          </div>
 
-        <p>
-          Fredag: 11.30 - 21.00
-        </p>
+          <div class="hours-row">
+            <span class="hours-day">Onsdag</span>
+            <span class="hours-time">11.30 - 20.00</span>
+          </div>
 
-        <p>
-          Lördag: 12.00 - 21.00
-        </p>
+          <div class="hours-row">
+            <span class="hours-day">Torsdag</span>
+            <span class="hours-time">11.30 - 20.00</span>
+          </div>
 
-        <p>
-          Söndag: 12.00 - 20.00
-        </p>
+          <div class="hours-row">
+            <span class="hours-day">Fredag</span>
+            <span class="hours-time">11.30 - 21.00</span>
+          </div>
+
+          <div class="hours-row">
+            <span class="hours-day">Lördag</span>
+            <span class="hours-time">12.00 - 21.00</span>
+          </div>
+
+          <div class="hours-row">
+            <span class="hours-day">Söndag</span>
+            <span class="hours-time">12.00 - 20.00</span>
+          </div>
+        </div>
 
         <p class="kitchen-info">
-        OBS! Köket stänger 30 minuter innan stängning.
+          OBS! Köket stänger 30 minuter innan stängning.
         </p>
 
       </div>
@@ -120,7 +211,7 @@
   </section>
 
   <section class="meny">
-    <div class="meny-container">
+    <div class="meny-container" id="meny-jump">
       <div class="meny-text">
         <h1>Meny</h1>
         <div class="text">
@@ -137,7 +228,7 @@
           <div class="column-meny">
 
 
-            <a href="pdfs/Orkide_Thai_Meny.pdf " target="_blank">Takeaway</a>
+            <a href="pdfs/Orkide_Thai_Meny.pdf " target="_blank" rel="noopener noreferrer">Takeaway</a>
           </div>
 
           <!--
@@ -157,37 +248,37 @@
   <section class="images">
     <div class="row-images">
       <div class="column-images">
-        <img src="pictures/IMG_5084.jpg" alt="" style="width:100%">
+        <img src="pictures/IMG_5084.jpg" alt="Sushiratter hos Orkide Thai" style="width:100%">
       </div>
 
       <div class="column-images">
-        <img src="pictures/IMG_5088.jpg" alt="" style="width:100%">
+        <img src="pictures/IMG_5088.jpg" alt="Mat serverad pa Orkide Thai" style="width:100%">
       </div>
     </div>
 
     <div class="row-images">
       <div class="column-images">
-        <img src="pictures/IMG_5086.jpg" alt="" style="width:100%">
+        <img src="pictures/IMG_5086.jpg" alt="Thai- och sushimeny hos Orkide Thai" style="width:100%">
       </div>
 
       <div class="column-images">
-        <img src="pictures/IMG_5082.jpg" alt="" style="width:100%">
+        <img src="pictures/IMG_5082.jpg" alt="Tallrik fran Orkide Thai Restaurang" style="width:100%">
       </div>
     </div>
   </section>
 
 
   <section class="kontakt">
-    <div class="kontakt-container">
+    <div class="kontakt-container" id="kontakt-jump">
 
       <div class="row-kontakt">
 
         <div class="column-kontakt">
           <h1>Kontakt</h1>
           <p>Storgatan 19<br />514 33 Tranemo</p>
-          <p>Tel: 0325 - 766 99</p>
+          <p>Tel: <a href="tel:+4632576699">0325 - 766 99</a></p>
           <p>
-            <a href="https://www.facebook.com/profile.php?id=100048098426376" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=100048098426376" target="_blank" rel="noopener noreferrer" aria-label="Besok Orkide Thai pa Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="60" height="60">
                 <path fill="#3F51B5"
                   d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z" />
@@ -217,12 +308,9 @@
 
   <footer>
     <p>
-      © 2024 Orkide Thai Restaurang Tranemo. Alla rättigheter förbehållna.
+      © 2026 Orkide Thai Restaurang Tranemo. Alla rättigheter förbehållna.
     </p>
   </footer>
-
-  <div id="bottom">
-  </div>
 
   <script>
     function showSidebar() {
