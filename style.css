@@ -510,15 +510,6 @@ footer {
     max-width: 100%;
   }
 
-  .hours-row {
-    grid-template-columns: 1fr;
-    row-gap: 0.3rem;
-  }
-
-  .hours-time {
-    text-align: left;
-  }
-
   .meny-container h1{
     font-size: 2rem;
   }
