@@ -175,10 +175,10 @@ nav a:hover{
 }
 
 .text {
-  max-width: 72rem;
+  width: min(100%, 72rem);
   margin: 0 auto;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+  padding-right: clamp(1.5rem, 4vw, 4rem);
 }
 
 
@@ -207,10 +207,10 @@ nav a:hover{
 }
 
 .öppettider-text {
-  max-width: 48rem;
+  width: min(100%, 48rem);
   margin: 0 auto;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: clamp(1.5rem, 4vw, 3rem);
+  padding-right: clamp(1.5rem, 4vw, 3rem);
 }
 
 .öppettider-text p.lunch-info {
@@ -290,10 +290,10 @@ nav a:hover{
 
 
 .meny-text {
-  max-width: 72rem;
+  width: min(100%, 72rem);
   margin: 0 auto;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+  padding-right: clamp(1.5rem, 4vw, 4rem);
 }
 
 .meny-text a {
@@ -454,8 +454,8 @@ footer {
   .text,
   .öppettider-text,
   .meny-text {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .column-images,
