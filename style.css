@@ -191,7 +191,7 @@ nav a:hover{
   padding-bottom: 1rem;
 }
 
-.öppettider-container h1 {
+.öppettider-container h2 {
   margin-top: 0%;
   margin-bottom: 1rem;
   font-size: 5rem;
@@ -273,7 +273,7 @@ nav a:hover{
   padding-bottom: 1rem;
 }
 
-.meny-container h1 {
+.meny-container h2 {
   margin-top: 0%;
   margin-bottom: 1rem;
   font-size: 5rem;
@@ -364,7 +364,7 @@ nav a:hover{
   color: inherit;
 }
 
-.kontakt-container h1 {
+.kontakt-container h2 {
   margin-top: 0%;
   font-size: 2rem;
 }
@@ -426,7 +426,7 @@ footer {
     font-size: 1.2rem;
   }
 
-  .öppettider-container h1{
+  .öppettider-container h2{
     font-size: 3.5rem;
   }
   .öppettider-container p{
@@ -437,14 +437,14 @@ footer {
     padding: 0.9rem 0;
   }
 
-  .meny-container h1{
+  .meny-container h2{
     font-size: 3.5rem;
   }
   .meny-container p{
     font-size: 1.2rem;
   }
 
-  .kontakt-container h1{
+  .kontakt-container h2{
     font-size: 2rem;
   }
   .kontakt-container p{
@@ -498,7 +498,7 @@ footer {
     font-size: 1rem;
   }
   
-  .öppettider-container h1{
+  .öppettider-container h2{
     font-size: 2rem;
   }
   .öppettider-container p{
@@ -510,7 +510,7 @@ footer {
     max-width: 100%;
   }
 
-  .meny-container h1{
+  .meny-container h2{
     font-size: 2rem;
   }
   .meny-container p{
@@ -522,7 +522,7 @@ footer {
     font-size: 1rem;
   }
 
-  .kontakt-container h1{
+  .kontakt-container h2{
     font-size: 1.4rem;
   }
   .kontakt-container p{
