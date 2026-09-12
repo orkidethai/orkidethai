@@ -28,6 +28,13 @@ header {
   z-index: 999999;
 }
 
+/* Keep the fixed header from covering the target when jumping to #om-oss-jump / #meny-jump / #kontakt-jump */
+#om-oss-jump,
+#meny-jump,
+#kontakt-jump {
+  scroll-margin-top: 50px;
+}
+
 
 
 nav ul{
@@ -59,6 +66,12 @@ nav li{
 
 nav a:hover{
   background-color: #aa6a8c;
+}
+
+.navbar a img,
+.sidebar a img {
+  display: block;
+  border-radius: 0.2rem;
 }
 
 .navbar li:first-child {                                  
@@ -117,9 +130,24 @@ nav a:hover{
   width: 100%;
   position: relative;
   overflow: hidden;
+  background-color: #732a6e;
+}
+
+.column-images picture {
+  display: block;
+}
+
+/* <picture> is just a source-selection wrapper — remove it from the box
+   model entirely so .restaurant behaves exactly as if it were a direct
+   child of .hero (matches pre-WebP markup, avoids any compositor/layer
+   quirks a positioned wrapper box could introduce during anchor scroll). */
+.hero picture {
+  display: contents;
 }
 
 .restaurant{
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
